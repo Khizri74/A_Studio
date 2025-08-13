@@ -111,11 +111,32 @@
 }
 
 .help-your-business {
-    width: 358px;
     padding-left: 120px;
+    display: flex;
+    align-items: center;
+    margin-top: 94px;
+
+    &__text {
+        width: 396px;
+        margin-right: 91px;
+    }
 
     & span {
         width: 396px;
+    }
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 34px;
+
+    & .list-left :not(:last-child), .list-right :not(:last-child)  {
+        margin-bottom: 30px;
+    }
+
+    & .list-left {
+        margin-top: 79px;
     }
 }
 
@@ -139,6 +160,7 @@
     flex-direction: column;
     text-align: center;
     border: 1px solid red;
+    border-radius: 20px;
 
     &__img {
         display: flex;
@@ -146,19 +168,38 @@
         align-items: center;
         height: 121px;
         width: 121px;
-        background-color: #F1F7FF;
         border: none;
         border-radius: 20px;
     }
 
+    & .imgOne{
+        background-color: #F1F7FF;
+    }
+
+    & .imgTwo{
+        background-color: #FFF7E3;
+    }
+
+    & .imgThree{
+        background-color: #FFF2F8;
+    }
+
+    & .imgFour{
+        background-color: #DEFFEE;
+    }
+
     & .service-form {
+        display: inline-block;
+        width: 245px;
 
         & p {
-            width: 176px;
+            text-wrap: wrap;
+            width: 200px;
+            margin: 0 auto;
         }
 
         & span {
-            width: 245px;
+            text-wrap: wrap;
         }
     }
 }

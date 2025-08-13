@@ -90,11 +90,29 @@
 }
 
 .help-your-business {
-  width: 358px;
   padding-left: 120px;
+  display: flex;
+  align-items: center;
+  margin-top: 94px;
+}
+.help-your-business__text {
+  width: 396px;
+  margin-right: 91px;
 }
 .help-your-business span {
   width: 396px;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 34px;
+}
+.service-container .list-left :not(:last-child), .service-container .list-right :not(:last-child) {
+  margin-bottom: 30px;
+}
+.service-container .list-left {
+  margin-top: 79px;
 }
 
 .service-form p {
@@ -114,6 +132,7 @@
   flex-direction: column;
   text-align: center;
   border: 1px solid red;
+  border-radius: 20px;
 }
 .service-box__img {
   display: flex;
@@ -121,15 +140,32 @@
   align-items: center;
   height: 121px;
   width: 121px;
-  background-color: #F1F7FF;
   border: none;
   border-radius: 20px;
 }
+.service-box .imgOne {
+  background-color: #F1F7FF;
+}
+.service-box .imgTwo {
+  background-color: #FFF7E3;
+}
+.service-box .imgThree {
+  background-color: #FFF2F8;
+}
+.service-box .imgFour {
+  background-color: #DEFFEE;
+}
+.service-box .service-form {
+  display: inline-block;
+  width: 245px;
+}
 .service-box .service-form p {
-  width: 176px;
+  text-wrap: wrap;
+  width: 200px;
+  margin: 0 auto;
 }
 .service-box .service-form span {
-  width: 245px;
+  text-wrap: wrap;
 }
 
 :root {
