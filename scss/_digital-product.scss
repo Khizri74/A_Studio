@@ -1,0 +1,41 @@
+.digital-product__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    margin: 146px 0 20rem;
+
+    &__media {
+        border-radius: 40px;
+
+        & .product__media-iframe {
+            display: flex;
+            position: absolute;
+
+            & .iframe-video {
+                border-radius: 32px;
+            }
+
+            & .bottom-layer-img__media {
+                position: relative;
+                z-index: -20;
+                width: 129px;
+                height: 129px; 
+                top: 19rem;
+                left: -5rem;
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        max-width: 532px;
+    }
+
+    & .bottom-layer-img__text {
+        position: absolute;
+        z-index: -20;
+        left: -3rem;
+    }
+}

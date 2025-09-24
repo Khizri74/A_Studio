@@ -1,0 +1,31 @@
+.our-client__inner {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-top: 136px;
+    padding: 0 120px;
+
+    &__text {
+        width: 336px;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    
+    &__list-logo {
+        display: flex;
+        align-items: center;
+        padding-top: 28px;
+        margin: 0;
+
+        & :last-child {
+            margin-top: 20px;
+        }
+
+        & :not(:first-child) {
+            padding-left: 60px;
+        }
+    }
+}
