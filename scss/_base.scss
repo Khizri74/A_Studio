@@ -115,6 +115,7 @@
     display: flex;
     align-items: center;
     margin-top: 94px;
+    position: relative;
 
     &__text {
         width: 396px;
@@ -124,12 +125,33 @@
     & span {
         width: 396px;
     }
+
+    & .bg-figure {
+        position: absolute;
+        z-index: -25;
+    }
+
+    & .rectangle {
+        top: 19rem;
+        left: 5rem;
+    }
+
+    & .group__ellipse {
+        top: 40rem;
+        left: 7rem;
+    }
+
+    & .ellipse {
+        top: 45rem;
+        left: 76rem;
+    }
 }
 
 .service-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px 34px;
+    position: relative;
 
     & .list-left :not(:last-child), .list-right :not(:last-child)  {
         margin-bottom: 30px;
@@ -137,6 +159,13 @@
 
     & .list-left {
         margin-top: 79px;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 10rem;
+        left: -12rem;
+        z-index: -20;
     }
 }
 
@@ -159,7 +188,9 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    border: 1px solid red;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    // border: 1px solid red;
     border-radius: 20px;
 
     &__img {
@@ -202,4 +233,56 @@
             text-wrap: wrap;
         }
     }
+}
+
+.digital-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    margin-top: 146px;
+
+    &__media {
+        position: relative;
+        border-radius: 40px;
+
+        & video {
+            width: 400px;
+            height: 250px;
+        }
+
+        & .media-img {
+            height: 372px;
+            width: 552px;
+            z-index: 20;
+        }
+
+        & .shorts {
+            height: 372px;
+            width: 552px;
+            border-radius: 40px;
+        }
+
+        & .play-button {
+            position: absolute;
+            top: 8rem;
+            left: 14rem;
+        }
+    }
+
+    &__text {
+        max-width: 532px;
+    }
+}
+
+#playButton {
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+}
+
+.happy-client {
+    margin-top: 177px;
+    display: flex;
+    
 }
