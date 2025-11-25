@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/scss/css/main.css">
-    <title>Document</title>
+    <title>A-Studio</title>
 </head>
 <body>
     <div class="wrapper">
@@ -28,7 +28,7 @@
             <img class="position-img" id="imageTwo" src="/assets/Rectangle 23.png" alt="figure">
             <img class="position-img" id="imageThree" src="/assets/Dot Ornament.png" alt="figure">
             <div class="header-content__text">
-                <article class="header-heading-form heading-form">
+                <article class="header-heading-form heading-h1-form">
                     <p>A Digital Product Agency</p>
                     <span>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</span>
                 </article>
@@ -53,16 +53,16 @@
             </div>
         </section>
         <section class="help-your-business">
-            <img class="bg-figure rectangle" src="/assets/Rectangle 25.png" alt="figure">
-            <img class="bg-figure group__ellipse" src="/assets/Group 70.png" alt="group__ellipse">
-            <img class="bg-figure ellipse" src="/assets/Ellipse 87.png" alt="ellipse">
             <article class="help-your-business__text heading-form">
+                <img class="bg-figure rectangle" src="/assets/Rectangle 25.png" alt="figure">
                 <p>How can we help your Business ?</p>
                 <span>We build readymade websites, mobile applications, and elaborate online business services.</span>
+                <img class="bg-figure group__ellipse" src="/assets/Group 70.png" alt="group__ellipse">
             </article>
 
             <section class="service-container">
                 <img class="service-container__bg" src="/assets/Rectangle 24.png" alt="bg-color">
+                <img class="bg-figure ellipse" src="/assets/Ellipse 87.png" alt="ellipse">
                 <div class="list-left">
                     <article class="help-your-business__service service-form">
                         <div class="service-box">
@@ -119,16 +119,13 @@
 
         <section class="digital-product">
             <div class="digital-product__media">
-                <video id="myVideo" src="/assets/assets_video/Когда сидишь на работе и думаешь где еще взять денег.mp4"></video>
-
-                <div id="playButton">
-                    <img class="play-color" src="/assets/play-rounded-button 1.png" alt="play-button">
+                <div class="product__media-iframe">
+                    <iframe class="iframe-video" width="550" height="372" src="https://www.youtube.com/embed/E2Rj2gQAyPA?si=CBszbX3VxZwTRBCT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img class="bottom-layer-img__media" src="/assets/Ellipse 86.png" alt="">
                 </div>
-
-                <!-- <img class="media-img" src="/assets/unsplash_bzqU01v-G54.png" alt="media">
-                <img class="play-button" src="/assets/play-rounded-button 1.png" alt="play-button"> -->
             </div>
             <article class="digital-product__text heading-form">
+                <img class="bottom-layer-img__text" src="/assets/Rectangle 26.png" alt="">
                 <p>
                     Great Digital Product Agency since 2016 
                 </p>
@@ -141,6 +138,24 @@
         <section class="happy-client heading-form">
             <p>What our happy client say</p>
             <span>Several selected clients, who already believe in our service.</span>
+        </section>
+        <section class="profile">
+            <article class="id_Profile"></article>
+        </section>
+        <section class="subscribeNewsletter subscribeNewsletter--bgColor">
+            <div class="subscribeNewsletter-item">
+                <div class="subscribeNewsletter-item__left heading-form">
+                    <h1 class="item-header">Subscribe Newsletter</h1>
+                    <span>I will update good news and promotion service not spam</span>
+                </div>
+                <div class="subscribeNewsletter-item__right">
+                    <img class="subscribeNewsletter-item__right subscribeNewsletter-item__right--secondaryBgColor" src="/assets/Rectangle 31.png" alt="">
+                    <form class="mailForm" action="/#" method="post">
+                        <input type="email" class="email" name="user_email" placeholder="Enter your email address.." required>
+                        <button class="innerSubmit" type="submit">Contact Now</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </div>
 </body>
