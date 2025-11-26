@@ -109,8 +109,10 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 104px 0 0 -7.3rem;
+  margin: 100px 0 0 -7.3rem;
+  padding: 5px 0;
   position: relative;
+  overflow: hidden;
 }
 .help-your-business__inner__text {
   width: 396px;
@@ -134,26 +136,25 @@
 }
 .help-your-business__inner .ellipse {
   top: 45rem;
-  left: 36rem;
+  left: 109rem;
+}
+.help-your-business__inner .service-container__bg {
+  position: absolute;
+  top: 10rem;
+  left: 63rem;
+  z-index: -20;
 }
 
 .service-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px 34px;
-  position: relative;
 }
 .service-container .list-left :not(:last-child), .service-container .list-right :not(:last-child) {
   margin-bottom: 30px;
 }
 .service-container .list-left {
   margin-top: 79px;
-}
-.service-container__bg {
-  position: absolute;
-  top: 10rem;
-  left: -11rem;
-  z-index: -20;
 }
 
 .service-form p {
