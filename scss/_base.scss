@@ -1,4 +1,8 @@
 
+// * {
+//     outline: 2px solid green;
+// }
+
 
 .header {
     
@@ -24,10 +28,10 @@
     }
 }
 
-.header-content {
+.header-content__inner {
     max-height: 608px;
-    padding: 40px 0 0 120px;
-    margin-bottom: 110px;
+    margin: 40px 0 0 68px;
+    padding-left: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,21 +103,26 @@
         }
 }
 
-.our-client {
+.our-client__inner {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    justify-content: space-around;
+    margin-top: 136px;
 
     &__text {
         width: 336px;
-        margin-bottom: 40px;
+
+        p {
+            margin-top: 0;
+        }
     }
 
     
     &__list-logo {
         display: flex;
         align-items: center;
-        margin-top: 50px;
+        padding-top: 28px;
+        margin: 0;
 
         & :last-child {
             margin-top: 20px;
@@ -125,12 +134,11 @@
     }
 }
 
-.help-your-business {
-    padding-left: 120px;
+.help-your-business__inner {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 94px;
+    margin: 104px 0 0 -7.3rem;
     position: relative;
 
     &__text {
@@ -182,7 +190,7 @@
     &__bg {
         position: absolute;
         top: 10rem;
-        left: -12rem;
+        left: -11rem;
         z-index: -20;
     }
 }
@@ -253,7 +261,7 @@
     }
 }
 
-.digital-product {
+.digital-product__inner {
     display: flex;
     justify-content: space-between;
     padding: 0 120px;
