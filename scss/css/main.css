@@ -36,8 +36,8 @@
   left: 67rem;
 }
 .header-content__inner #imageTwo {
-  top: 30rem;
-  left: 100rem;
+  top: 27rem;
+  right: 5rem;
 }
 .header-content__inner #imageThree {
   top: 25rem;
@@ -108,9 +108,9 @@
 .help-your-business__inner {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 100px 0 0 -7.3rem;
-  padding: 5px 0;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 5px 120px;
   position: relative;
   overflow: hidden;
 }
@@ -136,12 +136,12 @@
 }
 .help-your-business__inner .ellipse {
   top: 45rem;
-  left: 109rem;
+  left: 107rem;
 }
 .help-your-business__inner .service-container__bg {
   position: absolute;
   top: 10rem;
-  left: 63rem;
+  left: 55rem;
   z-index: -20;
 }
 
