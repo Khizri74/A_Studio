@@ -70,7 +70,7 @@
         font-size: 20px;
         margin-top: 33px;
         background-color: var(--btn-color);
-        color: var(--base-color);
+        color: #FFF;
         border: none;
         border-radius: 40px;
         font-weight: 600;
@@ -106,8 +106,9 @@
 .our-client__inner {
     display: flex;
     align-items: center; 
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 136px;
+    padding: 0 120px;
 
     &__text {
         width: 336px;
@@ -332,8 +333,18 @@
         height: 292px;
         border-radius: 75px;
 
+        &__left {
+            .item-header {
+                margin-top: -29px;
+            }
+        }
+
         &__right {
             position: relative;
+
+            &--secondaryBgColor {
+                left: 50px;
+            }
 
             .mailForm {
                 position: relative;
@@ -341,7 +352,8 @@
             .email {
                 position: absolute;
                 top: -12rem;
-                left: -6rem;
+                left: 2rem;
+                padding-left: 34px;
                 display: block;
                 height: 80px;
                 width: 479px;
@@ -359,9 +371,71 @@
                 padding: 20px 40px;
                 font-size: 16px;
                 top: -181px;
-                left: 204px;
+                right: 7px;
                 }
             }
         }
     }
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 106px;
+
+    //Разобраться с ЭТИМ!
+
+    //  *:not(.inner__footer),
+    //  .inner__footer ~ * {
+    //     align-items: center;
+    // }
+
+    .inner__footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 120px;
+        padding: 63px 0 28px 0;
+        border-top: 2px solid var(--border-color);
+        border-bottom: 2px solid var(--border-color);
+
+        & .DescriptionAndSocialMedia {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 106px;
+                height: 30px;
+                object-fit: contain;
+                margin-bottom: 29px;
+            }
+
+            span {
+                display: inline-flex;
+                max-width: 270px;
+                font-size: 14px;
+                opacity: 0.5;
+            }
+        }
+
+        & .footer-information--style {
+            margin-top: 5px;
+
+            li:first-child {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 29px;
+            }
+
+            li:not(:first-child) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .copyright {
+        margin: 5px auto;
+        font-size: var(--h2-text-size);
+        opacity: 0.5;
+    }
+}
+

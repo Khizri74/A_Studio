@@ -54,7 +54,7 @@
   font-size: 20px;
   margin-top: 33px;
   background-color: var(--btn-color);
-  color: var(--base-color);
+  color: #FFF;
   border: none;
   border-radius: 40px;
   font-weight: 600;
@@ -83,8 +83,9 @@
 .our-client__inner {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 136px;
+  padding: 0 120px;
 }
 .our-client__inner__text {
   width: 336px;
@@ -274,8 +275,14 @@
   height: 292px;
   border-radius: 75px;
 }
+.subscribeNewsletter-item__left .item-header {
+  margin-top: -29px;
+}
 .subscribeNewsletter-item__right {
   position: relative;
+}
+.subscribeNewsletter-item__right--secondaryBgColor {
+  left: 50px;
 }
 .subscribeNewsletter-item__right .mailForm {
   position: relative;
@@ -283,7 +290,8 @@
 .subscribeNewsletter-item__right .mailForm .email {
   position: absolute;
   top: -12rem;
-  left: -6rem;
+  left: 2rem;
+  padding-left: 34px;
   display: block;
   height: 80px;
   width: 479px;
@@ -300,7 +308,54 @@
   padding: 20px 40px;
   font-size: 16px;
   top: -181px;
-  left: 204px;
+  right: 7px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 106px;
+}
+.footer .inner__footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 120px;
+  padding: 63px 0 28px 0;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+}
+.footer .inner__footer .DescriptionAndSocialMedia {
+  display: flex;
+  flex-direction: column;
+}
+.footer .inner__footer .DescriptionAndSocialMedia img {
+  width: 106px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 29px;
+}
+.footer .inner__footer .DescriptionAndSocialMedia span {
+  display: inline-flex;
+  max-width: 270px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+.footer .inner__footer .footer-information--style {
+  margin-top: 5px;
+}
+.footer .inner__footer .footer-information--style li:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 29px;
+}
+.footer .inner__footer .footer-information--style li:not(:first-child) {
+  font-size: 14px;
+}
+.footer .copyright {
+  margin: 5px auto;
+  font-size: var(--h2-text-size);
+  opacity: 0.5;
 }
 
 :root {
@@ -308,10 +363,12 @@
   --header-h1-margin: 40px;
   --header-text-margin: 20px;
   --span-text-size: 16px;
+  --h2-text-size: 14px;
   --box-text-size: 24px;
   --btn-color: #2639ED;
   --btn-text-color: #FFFFFF;
   --bg-color: #F4F9FF;
+  --border-color: #E4E4E4;
 }
 
 html body {
