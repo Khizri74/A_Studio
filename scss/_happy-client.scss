@@ -1,72 +1,76 @@
-.happy-client {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 148px;
+.happy-client__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 148px;
+}
+
+.happy-client__content {
+
 }
 
 .subscribeNewsletter {
+  display: flex;
+  justify-content: center;
+  margin-top: 148px;
+
+  &--bgColor {
+    background-color: var(--bg-color);
+    border-radius: 74px;
+    max-width: 80%;
+    height: 292px;
+    margin: auto;
+  }
+
+  &-item {
     display: flex;
-    justify-content: center;
-    margin-top: 148px;
-    
-    &--bgColor {
-        background-color: var(--bg-color);
-        border-radius: 74px;
-        max-width: 80%;
-        height: 292px;
-        margin: auto;
-    }
-    
-    &-item { 
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 292px;
-        border-radius: 75px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 292px;
+    border-radius: 75px;
 
-        &__left {
-            .item-header {
-                margin-top: -29px;
-            }
+    &__left {
+      .item-header {
+        margin-top: -29px;
+      }
+    }
+
+    &__right {
+      position: relative;
+
+      &--secondaryBgColor {
+        left: 50px;
+      }
+
+      .mailForm {
+        position: relative;
+
+        .email {
+          position: absolute;
+          top: -12rem;
+          left: 2rem;
+          padding-left: 34px;
+          display: block;
+          height: 80px;
+          width: 479px;
+          border: none;
+          border-radius: 60px;
+          font-size: 16px;
+          filter: drop-shadow(0 0 0.75rem black);
         }
 
-        &__right {
-            position: relative;
-
-            &--secondaryBgColor {
-                left: 50px;
-            }
-
-            .mailForm {
-                position: relative;
-
-            .email {
-                position: absolute;
-                top: -12rem;
-                left: 2rem;
-                padding-left: 34px;
-                display: block;
-                height: 80px;
-                width: 479px;
-                border: none;
-                border-radius: 60px;
-                font-size: 16px;
-                filter: drop-shadow(0 0 0.75rem black);
-                }
-
-            .innerSubmit {
-                position: absolute;
-                border-radius: 45px;
-                background-color: var(--btn-color);
-                color: var(--btn-text-color);
-                padding: 20px 40px;
-                font-size: 16px;
-                top: -181px;
-                right: 7px;
-                }
-            }
+        .innerSubmit {
+          position: absolute;
+          border-radius: 45px;
+          background-color: var(--btn-color);
+          color: var(--btn-text-color);
+          padding: 20px 40px;
+          font-size: 16px;
+          top: -181px;
+          right: 7px;
         }
+      }
     }
+  }
 }

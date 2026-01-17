@@ -303,7 +303,7 @@ li {
   left: -3rem;
 }
 
-.happy-client {
+.happy-client__header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -421,4 +421,13 @@ li {
   margin: 5px auto;
   font-size: var(--h2-text-size);
   opacity: 0.5;
+}
+
+@media (max-width: 1660px) {
+  .header,
+  .section,
+  .footer {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }/*# sourceMappingURL=main.css.map */
