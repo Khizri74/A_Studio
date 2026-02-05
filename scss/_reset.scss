@@ -1,27 +1,31 @@
 html body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "ABeeZee", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "ABeeZee", sans-serif;
 }
 
 a {
-    all: unset;
+	all: unset;
 }
 
 li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .heading-form {
-    & p {
-            font-size: var(--header-text-size);
-            margin-bottom: var(--header-text-margin);
-            font-weight: 700;
-        }
+	& p {
+			font-size: var(--header-text-size);
+			margin-bottom: var(--header-text-margin);
+			font-weight: 700;
+		}
 
-        & span {
-            font-size: var(--span-text-size);
-            opacity: 0.6;
-        }
+		& span {
+			font-size: var(--span-text-size);
+			opacity: 0.6;
+		}
 }
+
+// * {
+//   outline: 2px solid green;
+// }
