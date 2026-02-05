@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
 :root {
   --header-text-size: 40px;
@@ -311,22 +312,79 @@ li {
   margin-bottom: 148px;
 }
 
-.happy-client__content .portfolio-style {
+.happy-client__content {
+  display: flex;
+  /* Блок слева */
+  /* Анимация */
+  /* Блок перелистывания */
+  /* Блок правый */
+}
+.happy-client__content .portfolio-block {
+  display: flex;
+  overflow: hidden;
+  width: 70%;
+  height: 350px;
+  margin: 10px 40px;
+  padding: 20px;
+  border: 2px solid green;
+  /* Элементы внутри блока */
+}
+.happy-client__content .portfolio-block .portfolio {
+  margin-right: 500px;
+}
+.happy-client__content .portfolio-block .portfolio.animate {
+  animation: portfolioShow 1s forwards;
+}
+.happy-client__content .portfolio-block .portfolio-style {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.happy-client__content .portfolio-style__img {
+.happy-client__content .portfolio-block .portfolio-style__img {
   width: 300px;
   height: 200px;
   margin-right: 40px;
 }
-.happy-client__content .portfolio-style__header {
-  font-size: var(--portfolio-headers-size);
-}
-.happy-client__content .portfolio-style__info {
+.happy-client__content .portfolio-block .portfolio-style__info {
   width: 300px;
-  font-size: var(--span-text-size);
+}
+@keyframes portfolioShow {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.happy-client__content .flipping {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.happy-client__content .flipping__elipsFlip {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-top: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.happy-client__content .flipping__elipsFlip:active {
+  background-color: #555;
+}
+.happy-client__content .porfolio-block__img {
+  display: flex;
+}
+.happy-client__content .porfolio-block__img .showImg {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .subscribeNewsletter {
