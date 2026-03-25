@@ -1,0 +1,106 @@
+.header {
+    margin-top: 40px;
+
+    nav {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 120px;
+
+        .header-logo {
+            &:hover {
+                    transform: scale(1.1);
+                    transition: transform 0.1s ease-in-out;
+                    filter: drop-shadow(2px 4px 2px #555);
+                    cursor: pointer;
+                }
+        }
+
+        & .nav-list {
+            display: flex;
+            
+            & li {
+                list-style-type: none;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: transform 0.2s ease-in-out;
+                    filter: drop-shadow(2px 4px 2px #555);
+                    cursor: pointer;
+                }
+
+                &:not(:first-child) {
+                padding-left: 60px;
+                }
+            }
+        }
+    }
+}
+
+.header-content__inner {
+    max-height: 608px;
+    margin: 40px 0 0 68px;
+    padding-left: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+    & .position-img {     
+        position: absolute;
+        z-index: -20;
+    }
+
+        & #imageOne { 
+            top: 2.5rem;
+            left: 67rem;
+        }
+
+        & #imageTwo {
+            top: 27rem;
+            right: 5rem;
+        }
+
+        & #imageThree {
+            top: 25rem;
+            left: 4rem;
+        }
+
+    &__text {
+        width: 471px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__btn {
+        width: 214px;
+        height: 64px;
+        font-size: 20px;
+        margin-top: 33px;
+        background-color: var(--btn-color);
+        color: #FFF;
+        border: none;
+        border-radius: 40px;
+        font-weight: 600;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+        }
+    }
+} 
+
+.heading-h1-form {
+    & p {
+            font-size: var(--header-text-size);
+            margin-bottom: var(--header-h1-margin);
+            font-weight: 700;
+        }
+
+        & span {
+            font-size: var(--span-text-size);
+            opacity: 0.6;
+        }
+}

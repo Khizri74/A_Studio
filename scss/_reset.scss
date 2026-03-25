@@ -1,0 +1,27 @@
+html body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "ABeeZee", sans-serif;
+}
+
+a {
+    all: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+.heading-form {
+    & p {
+            font-size: var(--header-text-size);
+            margin-bottom: var(--header-text-margin);
+            font-weight: 700;
+        }
+
+        & span {
+            font-size: var(--span-text-size);
+            opacity: 0.6;
+        }
+}
