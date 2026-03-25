@@ -51,7 +51,6 @@ li {
 .header nav .header-logo:hover {
   transform: scale(1.1);
   transition: transform 0.1s ease-in-out;
-  filter: drop-shadow(2px 4px 2px #555);
   cursor: pointer;
 }
 .header nav .nav-list {
@@ -63,7 +62,6 @@ li {
 .header nav .nav-list li:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
-  filter: drop-shadow(2px 4px 2px #555);
   cursor: pointer;
 }
 .header nav .nav-list li:not(:first-child) {
@@ -278,12 +276,9 @@ li {
   border-radius: 40px;
 }
 .digital-product__inner__media .product__inner__media-iframe {
-  display: flex;
-  position: absolute;
-}
-.digital-product__inner__media .product__inner__media-iframe .iframe-video {
-  border-radius: 32px;
-  box-shadow: 6px 11px 18px #555;
+  border: 2px solid var(--btn-color);
+  height: 400px;
+  width: 600px;
 }
 .digital-product__inner__media .product__inner__media-iframe .bottom-layer-img__media {
   position: relative;
@@ -314,13 +309,72 @@ li {
 
 .happy-client__content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 90px;
+  position: relative;
 }
-.happy-client__content .content__right {
-  outline: 2px solid green;
+.happy-client__content .flipping {
+  position: absolute;
+  z-index: 10;
+  width: 280px;
+  left: 53rem;
+  top: 23rem;
 }
-.happy-client__content .content__right .avatar-container {
-  outline: 2px solid green;
+.happy-client__content .elipsFlip {
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 26px;
+  cursor: pointer;
+}
+.happy-client__content .elipsFlip:active {
+  background-color: var(--btn-color);
+}
+.happy-client__content .content__left {
+  max-height: 450px;
+  overflow: hidden;
+}
+.happy-client__content .content__left .profile {
+  margin-bottom: 50px;
+}
+@keyframes portfolioShow {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.happy-client__content .content__left .profile.animate {
+  animation: portfolioShow 1s forwards;
+}
+.happy-client__content .content__left .profile__style {
+  display: flex;
+  height: 400px;
+}
+.happy-client__content .content__left .profile__style--form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 84px;
+}
+.happy-client__content .content__left .profile__style--form img {
+  width: 389px;
+  height: 389px;
+}
+.happy-client__content .content__left .profile__style--form p {
+  width: 412px;
+}
+.happy-client__content .content__left .profile .showImg {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.happy-client__content .avatar-container {
   position: relative;
   width: 400px;
   height: 400px;
@@ -329,7 +383,7 @@ li {
   align-items: center;
   border-radius: var(--circle-radius);
 }
-.happy-client__content .content__right .avatar {
+.happy-client__content .avatar {
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
@@ -338,19 +392,19 @@ li {
   transition: transform 1s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
 }
-.happy-client__content .content__right .avatar img {
+.happy-client__content .avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.happy-client__content .content__right .main-avatar {
+.happy-client__content .main-avatar {
   position: relative;
   width: 120px;
   height: 120px;
   border-color: var(--btn-text-color);
 }
-.happy-client__content .content__right #headerImg {
+.happy-client__content #headerImg {
   position: absolute;
   top: -20px;
   left: -40px;
@@ -358,37 +412,33 @@ li {
   height: 200px;
   object-fit: contain;
 }
-.happy-client__content .content__right .sub-avatar {
+.happy-client__content .sub-avatar {
   width: 65px;
   height: 65px;
   background-color: #ccc;
 }
-.happy-client__content .content__right .avatar-1 {
+.happy-client__content .avatar-1 {
   transform: rotate(0deg) translate(var(--circle-radius)) rotate(0deg);
 }
-.happy-client__content .content__right .avatar-2 {
+.happy-client__content .avatar-2 {
   transform: rotate(60deg) translate(var(--circle-radius)) rotate(-60deg);
 }
-.happy-client__content .content__right .avatar-3 {
+.happy-client__content .avatar-3 {
   transform: rotate(120deg) translate(var(--circle-radius)) rotate(-120deg);
 }
-.happy-client__content .content__right .avatar-4 {
+.happy-client__content .avatar-4 {
   transform: rotate(180deg) translate(var(--circle-radius)) rotate(-180deg);
 }
-.happy-client__content .content__right .avatar-5 {
+.happy-client__content .avatar-5 {
   transform: rotate(240deg) translate(var(--circle-radius)) rotate(-240deg);
 }
-.happy-client__content .content__right .avatar-6 {
+.happy-client__content .avatar-6 {
   transform: rotate(300deg) translate(var(--circle-radius)) rotate(-300deg);
 }
-.happy-client__content .content__right .avatar:hover {
+.happy-client__content .avatar:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
-.happy-client__content .content__right .avatar:active {
-  border: 2px solid var(--btn-color);
-}
-.happy-client__content .content__right .avatar.focused {
-  transform: scale(2.1);
+.happy-client__content .avatar.focused {
   outline: 2px solid var(--focused-color);
 }
 

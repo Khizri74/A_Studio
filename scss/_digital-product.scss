@@ -8,13 +8,9 @@
         border-radius: 40px;
 
         & .product__inner__media-iframe {
-            display: flex;
-            position: absolute;
-
-            .iframe-video {
-                border-radius: 32px;
-                box-shadow: 6px 11px 18px #555;
-            }
+            border: 2px solid var(--btn-color);
+            height: 400px;
+            width: 600px;
 
             & .bottom-layer-img__media {
                 position: relative;

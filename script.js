@@ -1,6 +1,6 @@
-const showImg = document.querySelectorAll(".showImg");
+const showImg = document.querySelectorAll(".avatar");
 const bigImg = document.querySelectorAll(".bigImg");
-const userPort = document.querySelectorAll(".portfolio");
+const userProfile = document.querySelectorAll(".profile");
 const flipp = document.querySelectorAll(".elipsFlip");
 
 const clickElements = [showImg, flipp];
@@ -9,12 +9,12 @@ clickElements.forEach((nodeList) =>
   nodeList.forEach((elem, index) => {
     elem.addEventListener("click", () => {
       console.log("Клик по картинке $", index);
-      userPort.forEach((portfolio) => {
-        portfolio.style.display = "none";
+      userProfile.forEach((profile) => {
+        profile.style.display = "none";
       });
-      if (userPort[index]) {
-        userPort[index].style.display = "block";
-        userPort[index].classList.add("animate");
+      if (userProfile[index]) {
+        userProfile[index].style.display = "block";
+        userProfile[index].classList.add("animate");
       }
     });
   })

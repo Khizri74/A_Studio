@@ -7,14 +7,83 @@
 
 .happy-client__content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 90px;
+  position: relative;
 
-  // .content__left {}
+  .flipping {
+    position: absolute;
+    z-index: 10;
+    width: 280px;
+    left: 53rem;
+    top: 23rem;
+  }
 
-  .content__right{
-    outline: 2px solid green;
+  .elipsFlip {
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 26px;
+    cursor: pointer;
+  }
+
+  .elipsFlip:active {
+    background-color: var(--btn-color);
+  }
+
+  .content__left {
+    max-height: 450px;
+    overflow: hidden;
+
+    .profile {
+      margin-bottom: 50px;
+      @keyframes portfolioShow {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    }
+
+    &.animate {
+      animation: portfolioShow 1s forwards;
+    }
+
+    &__style {
+      display: flex;
+      height: 400px;
+
+      &--form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 84px;
+        
+        & img {
+          width: 389px;
+          height: 389px;
+        }
+
+        & p {
+          width: 412px;
+        }
+      }
+    }
+    
+    .showImg {
+      width: 80px;
+      height: 80px;
+      border: 2px solid black;
+      border-radius: 50%;
+      margin-right: 10px;
+      }
+    }
+    }
+
     .avatar-container {  
-      outline: 2px solid green;
       position: relative;  
       width: 400px;
       height: 400px; 
@@ -43,7 +112,6 @@
       position: relative;
       width: 120px;
       height: 120px;  
-      // z-index: -12;  
       border-color: var(--btn-text-color); 
     }  
 
@@ -85,17 +153,11 @@
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);  
     }
     
-    .avatar:active{
-      border: 2px solid var(--btn-color);
-    }
-
     .avatar.focused {
-      transform: scale(2.1);
       outline: 2px solid var(--focused-color);
     }
     
   }
-}
 
 .subscribeNewsletter {
   display: flex;
