@@ -167,17 +167,16 @@
   &--bgColor {
     background-color: var(--bg-color);
     border-radius: 74px;
-    max-width: 80%;
     height: 292px;
-    margin: auto;
   }
 
   &-item {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 1197px;
     height: 292px;
+    padding-left: 20px;
     border-radius: 75px;
 
     &__left {

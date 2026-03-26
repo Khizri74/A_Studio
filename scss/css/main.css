@@ -22,6 +22,7 @@ html body {
   margin: 0;
   box-sizing: border-box;
   font-family: "ABeeZee", sans-serif;
+  user-select: text;
 }
 
 a {
@@ -34,10 +35,23 @@ li {
 
 .heading-form p {
   font-size: var(--header-text-size);
-  margin-bottom: var(--header-text-margin);
+  margin-bottom: var(--header-margin-small);
   font-weight: 700;
 }
 .heading-form span {
+  font-size: var(--span-text-size);
+  opacity: 0.6;
+}
+
+.service-form p {
+  text-wrap: wrap;
+  font-weight: 600;
+  font-size: var(--box-text-size);
+  margin-top: var(--serviceBox-img-margin);
+  margin-bottom: var(--header-margin-small);
+}
+.service-form span {
+  text-wrap: wrap;
   font-size: var(--span-text-size);
   opacity: 0.6;
 }
@@ -105,7 +119,7 @@ li {
   width: 214px;
   height: 64px;
   font-size: 20px;
-  margin-top: 33px;
+  margin-top: 54px;
   background-color: var(--btn-color);
   color: #FFF;
   border: none;
@@ -198,6 +212,8 @@ li {
   left: 33rem;
   z-index: -20;
   width: 100%;
+  height: 619px;
+  overflow: hidden;
 }
 .help-your-business__inner .service-container__bg img {
   width: 100%;
@@ -213,14 +229,6 @@ li {
 }
 .service-container .service-box {
   margin-bottom: 30px;
-}
-
-.service-form p {
-  font-size: var(--box-text-size);
-}
-.service-form span {
-  font-size: var(--span-text-size);
-  opacity: 0.6;
 }
 
 .service-box {
@@ -268,14 +276,9 @@ li {
   align-items: center;
 }
 .service-box .service-form p {
-  font-weight: 600;
-  text-wrap: wrap;
   width: 200px;
-  margin-top: var(--serviceBox-img-margin);
-  margin-bottom: var(--header-margin-small);
 }
 .service-box .service-form span {
-  text-wrap: wrap;
   width: 245px;
 }
 
@@ -283,7 +286,7 @@ li {
   display: flex;
   justify-content: space-around;
   padding: 0 120px;
-  margin: 146px 0 20rem;
+  margin: 146px 0 117px;
 }
 .digital-product__inner__media {
   border-radius: 40px;
@@ -463,16 +466,15 @@ li {
 .subscribeNewsletter--bgColor {
   background-color: var(--bg-color);
   border-radius: 74px;
-  max-width: 80%;
   height: 292px;
-  margin: auto;
 }
 .subscribeNewsletter-item {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 1197px;
   height: 292px;
+  padding-left: 20px;
   border-radius: 75px;
 }
 .subscribeNewsletter-item__left .item-header {

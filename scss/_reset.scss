@@ -1,27 +1,45 @@
 html body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "ABeeZee", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "ABeeZee", sans-serif;
+
+	user-select: text;
 }
 
 a {
-    all: unset;
+	all: unset;
 }
 
 li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .heading-form {
-    & p {
-            font-size: var(--header-text-size);
-            margin-bottom: var(--header-text-margin);
-            font-weight: 700;
-        }
+	& p {
+		font-size: var(--header-text-size);
+		margin-bottom: var(--header-margin-small);
+		font-weight: 700;
+	}
 
-        & span {
-            font-size: var(--span-text-size);
-            opacity: 0.6;
-        }
+	& span {
+		font-size: var(--span-text-size);
+		opacity: 0.6;
+	}
+}
+
+.service-form {
+	& p {
+		text-wrap: wrap;
+		font-weight: 600;
+		font-size: var(--box-text-size);
+		margin-top: var(--serviceBox-img-margin);
+		margin-bottom: var(--header-margin-small);
+	}
+
+	& span {
+		text-wrap: wrap;
+		font-size: var(--span-text-size);
+		opacity: 0.6;
+	}
 }
