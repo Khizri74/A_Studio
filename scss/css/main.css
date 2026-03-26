@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
 :root {
   --header-text-size: 40px;
-  --header-h1-margin: 40px;
+  --header-margin: 48px;
+  --header-margin-small: 26px;
+  --header-cards-margin: 40px;
   --header-text-margin: 20px;
   --span-text-size: 16px;
   --h2-text-size: 14px;
   --box-text-size: 24px;
+  --serviceBox-img-margin: 31px;
   --btn-color: #2639ED;
   --btn-text-color: #FFFFFF;
   --bg-color: #F4F9FF;
@@ -82,8 +85,8 @@ li {
   z-index: -20;
 }
 .header-content__inner #imageOne {
-  top: 2.5rem;
-  left: 67rem;
+  top: 0rem;
+  left: 64rem;
 }
 .header-content__inner #imageTwo {
   top: 27rem;
@@ -91,7 +94,7 @@ li {
 }
 .header-content__inner #imageThree {
   top: 25rem;
-  left: 4rem;
+  left: 0rem;
 }
 .header-content__inner__text {
   width: 471px;
@@ -117,7 +120,7 @@ li {
 
 .heading-h1-form p {
   font-size: var(--header-text-size);
-  margin-bottom: var(--header-h1-margin);
+  margin-bottom: var(--header-margin);
   font-weight: 700;
 }
 .heading-h1-form span {
@@ -128,7 +131,7 @@ li {
 .our-client__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 136px;
   padding: 0 120px;
 }
@@ -158,11 +161,12 @@ li {
 .help-your-business__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 100px;
   padding: 5px 120px;
   position: relative;
   overflow: hidden;
+  height: 863px;
 }
 .help-your-business__inner__text {
   width: 396px;
@@ -186,25 +190,29 @@ li {
 }
 .help-your-business__inner .ellipse {
   top: 45rem;
-  left: 107rem;
+  left: 98rem;
 }
 .help-your-business__inner .service-container__bg {
   position: absolute;
   top: 10rem;
-  left: 55rem;
+  left: 33rem;
   z-index: -20;
+  width: 100%;
+}
+.help-your-business__inner .service-container__bg img {
+  width: 100%;
 }
 
 .service-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px 34px;
-}
-.service-container .list-left :not(:last-child), .service-container .list-right :not(:last-child) {
-  margin-bottom: 30px;
+  column-gap: 30px;
 }
 .service-container .list-left {
   margin-top: 79px;
+}
+.service-container .service-box {
+  margin-bottom: 30px;
 }
 
 .service-form p {
@@ -254,21 +262,26 @@ li {
   background-color: #DEFFEE;
 }
 .service-box .service-form {
-  display: inline-block;
-  width: 245px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .service-box .service-form p {
+  font-weight: 600;
   text-wrap: wrap;
   width: 200px;
-  margin: 0 auto;
+  margin-top: var(--serviceBox-img-margin);
+  margin-bottom: var(--header-margin-small);
 }
 .service-box .service-form span {
   text-wrap: wrap;
+  width: 245px;
 }
 
 .digital-product__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 120px;
   margin: 146px 0 20rem;
 }
