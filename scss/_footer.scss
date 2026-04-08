@@ -23,24 +23,42 @@
 		border-top: 2px solid var(--border-color);
 		border-bottom: 2px solid var(--border-color);
 
-		& .DescriptionAndSocialMedia {
-			display: flex;
-			flex-direction: column;
+		& .footer-DescriptionAndSocialMedia {
 
-			img {
-				width: 106px;
-				height: 30px;
-				object-fit: contain;
-				margin-bottom: 29px;
+			& .footer-description__item {
+				display: flex;
+				flex-direction: column;
+
+				img {
+					width: 106px;
+					height: 30px;
+					object-fit: contain;
+					margin-bottom: 29px;
+				}
+
+				span {
+					display: inline-flex;
+					max-width: 270px;
+					font-size: 14px;
+					opacity: 0.5;
+				}
 			}
 
-			span {
-				display: inline-flex;
-				max-width: 270px;
-				font-size: 14px;
-				opacity: 0.5;
+			& .socialMedia {
+				all: unset;
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-end;
+				margin-top: 43px;
+
+				img {
+					margin-right: 16px;
+				}
 			}
 		}
+
+		
+		
 
 		& .footer-information--style {
 			margin-top: 5px;

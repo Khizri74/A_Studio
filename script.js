@@ -28,3 +28,4 @@ avatars.forEach(avatar => {
     console.log('Клик по изображению');
   });
 });
+
