@@ -1,13 +1,31 @@
-const video = document.getElementById('myVideo');
-const playButton = document.getElementById('playButton');
+const showImg = document.querySelectorAll(".avatar");
+const bigImg = document.querySelectorAll(".bigImg");
+const userProf = document.querySelectorAll(".profile");
+const flipp = document.querySelectorAll(".elipsFlip");
 
-playButton.addEventListener('click', () => {
-    if (video.paused) {
-        video.play();
-        // playButton.textContent = 'Поставить на паузу';
-    } else {
-        video.pause();
-        // playButton.textContent = 'Воспроизвести';   
-    }
+const clickElements = [showImg, flipp];
+
+clickElements.forEach((nodeList) =>
+  nodeList.forEach((elem, index) => {
+    elem.addEventListener("click", () => {
+      console.log("Клик по картинке $", index);
+      userProf.forEach((profile) => {
+        profile.style.display = "none";
+      });
+      if (userProf[index]) {
+        userProf[index].style.display = "block";
+        userProf[index].classList.add("animate");
+      }
+    });
+  })  
+);
+const avatars = document.querySelectorAll('.avatar');
+
+avatars.forEach(avatar => {
+  avatar.addEventListener('click', () => {
+    avatars.forEach(a => a.classList.remove('focused'));
+    avatar.classList.add('focused');
+    console.log('Клик по изображению');
+  });
 });
 

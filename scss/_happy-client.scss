@@ -1,0 +1,225 @@
+.happy-client__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 148px;
+}
+
+.happy-client__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+  position: relative;
+
+  .flipping {
+    position: absolute;
+    z-index: 10;
+    width: 280px;
+    left: 53rem;
+    top: 23rem;
+  }
+
+  .elipsFlip {
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 26px;
+    cursor: pointer;
+  }
+
+  .elipsFlip:active {
+    background-color: var(--btn-color);
+  }
+
+  .content__left {
+    max-height: 450px;
+    overflow: hidden;
+
+    .profile {
+      margin-bottom: 50px;
+      @keyframes portfolioShow {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    }
+
+    &.animate {
+      animation: portfolioShow 1s forwards;
+    }
+
+    &__style {
+      display: flex;
+      height: 400px;
+
+      &--form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 84px;
+        
+        & img {
+          width: 389px;
+          height: 389px;
+        }
+
+        & p {
+          width: 412px;
+        }
+      }
+    }
+    
+    .showImg {
+      width: 80px;
+      height: 80px;
+      border: 2px solid black;
+      border-radius: 50%;
+      margin-right: 10px;
+      }
+    }
+    }
+
+    .avatar-container {  
+      position: relative;  
+      width: 400px;
+      height: 400px; 
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      border-radius: var(--circle-radius);
+    }  
+    
+    .avatar {  
+      position: absolute;  
+      border-radius: 50%;  
+      overflow: hidden;  
+      border: 3px solid var(--btn-text-color);  
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); 
+      transition: transform 1s ease-in-out, box-shadow 0.3s ease-in-out;  
+      cursor: pointer;  
+    }  
+    .avatar img {  
+      width: 100%;  
+      height: 100%;  
+      object-fit: cover;  
+      display: block; 
+    }  
+    .main-avatar {  
+      position: relative;
+      width: 120px;
+      height: 120px;  
+      border-color: var(--btn-text-color); 
+    }  
+
+    #headerImg {
+      position: absolute;
+      top: -20px;
+      left: -40px;
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+    
+    .sub-avatar {  
+      width: 65px; 
+      height: 65px;  
+      background-color: #ccc; 
+    }  
+      
+    .avatar-1 {  
+      transform: rotate(0deg) translate(var(--circle-radius)) rotate(0deg);  
+    }  
+    .avatar-2 {  
+      transform: rotate(60deg) translate(var(--circle-radius)) rotate(-60deg);  
+    }  
+    .avatar-3 {  
+      transform: rotate(120deg) translate(var(--circle-radius)) rotate(-120deg);  
+    }  
+    .avatar-4 {  
+      transform: rotate(180deg) translate(var(--circle-radius)) rotate(-180deg);  
+    }  
+    .avatar-5 {  
+      transform: rotate(240deg) translate(var(--circle-radius)) rotate(-240deg);  
+    }  
+    .avatar-6 {  
+      transform: rotate(300deg) translate(var(--circle-radius)) rotate(-300deg);  
+    }  
+  
+    .avatar:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);  
+    }
+    
+    .avatar.focused {
+      outline: 2px solid var(--focused-color);
+    }
+    
+  }
+
+.subscribeNewsletter {
+  display: flex;
+  justify-content: center;
+  margin-top: 148px;
+
+  &--bgColor {
+    background-color: var(--bg-color);
+    border-radius: 74px;
+    height: 292px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1197px;
+    height: 292px;
+    padding-left: 20px;
+    border-radius: 75px;
+
+    &__left {
+      .item-header {
+        margin-top: -29px;
+      }
+    }
+
+    &__right {
+      position: relative;
+
+      &--secondaryBgColor {
+        left: 50px;
+      }
+
+      .mailForm {
+        position: relative;
+
+        .email {
+          position: absolute;
+          top: -12rem;
+          left: 2rem;
+          padding-left: 34px;
+          display: block;
+          height: 80px;
+          width: 479px;
+          border: none;
+          border-radius: 60px;
+          font-size: 16px;
+          filter: drop-shadow(0 0 0.75rem black);
+        }
+
+        .innerSubmit {
+          position: absolute;
+          border-radius: 45px;
+          background-color: var(--btn-color);
+          color: var(--btn-text-color);
+          padding: 20px 40px;
+          font-size: 16px;
+          top: -181px;
+          right: 7px;
+        }
+      }
+    }
+  }
+}
