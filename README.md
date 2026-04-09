@@ -12,7 +12,7 @@
 <a href="https://pixso.net/app/design/z3h-911yELlP-RZtsXgZGQ?icon_type=1&page-id=0%3A1&item-id=602%3A183">Ссылка на проект в Pixso</a>
 
 💡 Стек
-<hr>
-- HTML5
-- CSS3
-- JavaScript 
+<hr style="height: 0.5px">
+- HTML
+- CSS
+- JavaScript
