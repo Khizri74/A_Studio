@@ -16,5 +16,5 @@
  <br>
 
 - HTML;
-- CSS;
+- CSS/SCSS;
 - JavaScript;
