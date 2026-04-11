@@ -8,7 +8,6 @@ const clickElements = [showImg, flipp];
 clickElements.forEach((nodeList) =>
   nodeList.forEach((elem, index) => {
     elem.addEventListener("click", () => {
-      console.log("Клик по картинке $", index);
       userProf.forEach((profile) => {
         profile.style.display = "none";
       });
@@ -19,13 +18,13 @@ clickElements.forEach((nodeList) =>
     });
   })  
 );
+
 const avatars = document.querySelectorAll('.avatar');
 
 avatars.forEach(avatar => {
   avatar.addEventListener('click', () => {
     avatars.forEach(a => a.classList.remove('focused'));
     avatar.classList.add('focused');
-    console.log('Клик по изображению');
   });
 });
 
