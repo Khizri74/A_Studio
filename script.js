@@ -18,6 +18,7 @@ clickElements.forEach((nodeList) =>
     });
   })  
 );
+
 const avatars = document.querySelectorAll('.avatar');
 
 avatars.forEach(avatar => {
